@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navbar container">
         <div class="nav-title">
           <img src="assets/logo 1.png" alt="" />
@@ -21,13 +21,13 @@
         </div>
         <ul class="nav-item">
           <li>
-            <a href="#">Home</a>
+            <a href="#header">Home</a>
           </li>
           <li>
-            <a href="#">Prodi</a>
+            <a href="#prodi">Prodi</a>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <a href="#contact">Contact us</a>
           </li>
         </ul>
         <div class="nav-right">
@@ -64,12 +64,114 @@
       </div>
       <section class="status-section">
         <ul>
-            <li> <span>2k+</span><br>Mahasiswa</li>
-            <li><span>3.8</span><br>Average CGPA</li>
-            <li><span>95%</span><br>Alumni</li>
+          <li><span>2k+</span><br />Mahasiswa</li>
+          <li><span>3.8</span><br />Average CGPA</li>
+          <li><span>95%</span><br />Alumni</li>
         </ul>
-      </section>c
+      </section>
+      <section class="program-studi" id="prodi">
+        <h4>Program Studi</h4>
+        <div class="cards">
+          <div class="card">
+            <img src="assets/electro.png" alt="" />
+            <p>Teknik Elektro</p>
+          </div>
+          <div class="card">
+            <img src="assets/informatika.png" alt="" />
+            <p>Teknik Informatika</p>
+          </div>
+          <div class="card">
+            <img src="assets/perkapalan.png" alt="" />
+            <p>Teknik Perkapalan</p>
+          </div>
+        </div>
+        <div class="tables">
+          <table>
+            <thead>
+              <tr>
+                <th>Program Studi</th>
+                <th>Mahasiswa Aktif</th>
+                <th>Alumni Mahasiswa</th>
+                <th>Akreditasi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Teknik Elektro</td>
+                <td>167</td>
+                <td>1.206</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td>Teknik Informatika</td>
+                <td>143</td>
+                <td>1.132</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td>Teknik Perkapalan</td>
+                <td>87</td>
+                <td>0</td>
+                <td>C</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="rektor">
+        <h5>Rektor UMRAH</h5>
+        <div class="rektor-group">
+          <div class="rektor-card">
+            <img src="assets/rektor.png" alt="" />
+          </div>
+          <div class="rektor-desc">
+            <h6>Prof. Dr. Agung Dhamar Syakti, S.Pi., DEA</h6>
+            <p>
+              Prof. Dr. Agung Dhamar Syakti, S.Pi, DEA terpilih menjadi Rektor
+              UMRAH periode 2020-2024. Guru Besar Pertama UMRAH dalam bidang
+              Bioremediasi dan Polutan Laut.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h5>Contact Us</h5>
+        <form>
+          <div class="input-group">
+            <label for="">Name </label><span>:</span>
+            <input type="text" placeholder="Input Nama Anda" required />
+          </div>
+          <div class="input-group">
+            <label for="" >NIM </label><span style="margin-left: 30px;">:</span>
+            <input type="number" placeholder="Input NIM Anda" required />
+          </div>
+          <div class="input-group">
+            <label for="">Email </label><span style="margin-left: 10px;">:</span>
+            <input type="email" placeholder="Input Email Anda" required />
+          </div>
+          <div class="input-group">
+            <label for="">No Tel </label><span>:</span>
+            <input
+              type="number"
+              placeholder="Input Nomor Telepon Anda"
+              required
+            />
+          </div>
+          <div class="input-text">
+            <p>Pertanyaan</p>
+            <textarea name="pertanyaan" id="pertanyaan" >
+            </textarea>
+          </div>\
+          <div class="center-btn">
+            <button class="btn-contact">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      Copyright 2022 | All Right Reserved | O. Riastanjung | 2001020039
+    </footer>
   </body>
 </html>

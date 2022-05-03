@@ -6,6 +6,7 @@
     --orange : #F47825;
     --black-dark : #2C2D30;
     --black-light : #5E636F;
+    --gray-light :#F5F5F5;
 }
 * {
     margin: 0;
@@ -17,11 +18,37 @@ body{
     background-color: var(--white-background);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a0a5af;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #a0a5af;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #a0a5af;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 /* navigation section */
 .container {
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .header{
     width: 100%;
@@ -33,6 +60,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    ;
 }
 
 .nav-title{
@@ -42,6 +70,7 @@ body{
     cursor: pointer;
 }
 .nav-title h1 {
+    margin-left: 5px;
     font-weight: 600;
     font-size: 26px;
     line-height: 2.438rem;
@@ -53,7 +82,10 @@ body{
 }
 
 .nav-item {
+    margin-left: 15rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 2.813rem;
 }
@@ -68,6 +100,10 @@ body{
     line-height: 2.063rem;
     color: var(--full-white);
 }
+.nav-item li a:hover{
+    transition: 0.5s;
+    color: #979797;
+}
 
 .nav-right {
     font-style: italic;
@@ -75,6 +111,7 @@ body{
     font-size: 24px;
     line-height: 2.25rem;
     color: var(--full-white);
+    cursor: default;
 }
 
 
@@ -128,7 +165,10 @@ body{
     color: var(--full-white);
     cursor: pointer;
 }
-
+.btn-hero:hover{
+    transition: 0.3s;
+    background-color: #0682fd;
+}
 
 /*video section*/
 
@@ -156,6 +196,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5.625rem;
 }
 
@@ -171,4 +212,234 @@ body{
 .status-section ul li span{
     font-weight: 800;
     color: var(--orange);
+}
+
+/* Program studi section */
+.program-studi{
+    margin-top: 9.625rem;
+}
+.program-studi h4{
+    color: var(--black-dark);
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 3.75rem;
+}
+.cards {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6.563rem;
+}
+
+.card{
+    width: 21.875rem;
+    height: 25.25rem;
+    background: var(--full-white);
+    border: 1px solid var(--blue-umrah);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.card:hover{
+    transition: 0.5s;
+    margin-top: -50px;
+}
+.card img {
+    width: 21.875rem;
+    height: 21.875rem;
+}
+.card p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 3rem;
+    color: var(--black-light);
+}
+.tables{
+    margin-top: 5.313rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    border-style: hidden; 
+    box-shadow: 0 0 0 1px var(--black-light); 
+}
+td, th {
+    border: 1px solid var(--black-light);
+    text-align: left;
+    padding: 1.875rem;
+    text-align: center;
+}
+th {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2.25rem;
+}
+td{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 2.063rem;
+}
+
+
+/* Rektor Section */
+
+
+.rektor {
+    margin-top: 7.5rem;
+}
+.rektor h5{
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 3.75rem;
+}
+.rektor-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.125rem;
+    height: 26.813rem;
+    background: var(--full-white);
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+.rektor-card img{
+    width: 18.285rem;
+    height: 24.653rem;
+}
+.rektor-group{
+    height: 32.688rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--gray-light);
+}
+.rektor-desc{
+    margin-left: 8.188rem;
+    width: 34.938rem;
+    height: 18.75rem;
+}
+.rektor-desc h6{
+    width: 34.938rem;
+    height: 2.029rem;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 2.625rem;
+}
+.rektor-desc p {
+    margin-top: 2.75rem;    
+    width: 34.5rem;
+    height: 14rem;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2.25rem;
+}
+
+
+/* Contact Section  */
+
+
+.contact {
+    margin-top: 5.625rem;
+}
+.contact h5 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 3.75rem;
+    margin-bottom: 3.125rem;
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+.input-group label{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 2.625rem;
+    color: var(--black-light);
+}
+
+.input-group input{
+    text-align: center;
+    border: none;
+    border-style: none;
+    width: 66.938rem;
+    height: 4.438rem;
+    background: var(--gray-light);
+    font-size: 28px;
+    border-radius: 20px;
+    color: var(--black-light);
+    border: 1px solid var(--black-light);
+}
+
+.input-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-text p{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 2.625rem;
+}
+
+.input-text textarea{
+    width: 100%;
+    height: 32.125rem;
+    background: var(--gray-light);
+    border: none;
+    border-radius: 20px;
+    border: 1px solid var(--black-light);
+    padding: 5rem;
+    font-size: 28px;
+    color: var(--black-light);
+}
+.center-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-contact{
+    border: none;
+    border-style: none;
+    width: 23.313rem;
+    height: 5.813rem;
+    background: var(--blue-umrah);
+    border-radius: 40px;
+    color: var(--full-white);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.875rem;
+    text-align: center;
+}
+
+.btn-contact:hover{
+    transition: 0.3s;
+    background-color: #0682fd;
+}
+
+/* Footer Section */
+
+footer{
+    margin-top: 5rem;
+    background-color: var(--black-bg);
+    padding: 3.125rem;
+    font-size: 28px;
+    color: var(--full-white);
+    text-align: center;
 }
