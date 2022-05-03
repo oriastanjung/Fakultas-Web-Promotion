@@ -1,4 +1,4 @@
 # Fakultas-Web-Promotion
 
 # Design ::>
-![alt text](`https://github.com/oriastanjung/Fakultas-Web-Promotion/blob/main/full%20design.png`)
+![alt text](https://raw.githubusercontent.com/oriastanjung/Fakultas-Web-Promotion/main/full%20design.png)
