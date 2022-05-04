@@ -60,7 +60,6 @@ input[type=number] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ;
 }
 
 .nav-title{
@@ -443,3 +442,406 @@ footer{
     color: var(--full-white);
     text-align: center;
 }
+/*RESPONSIVE STARTS*/
+/* X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {
+    .hero{
+        margin-top: 2rem !important;
+    }
+    .container{
+        margin: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .nav-right{
+        display: none;
+    }
+    .nav-item{
+        margin: 0;
+    }
+  }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    .rektor-desc{
+        margin: 0 auto;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .rektor-group {
+        background-color: var(--white-background);
+    }
+    .contact{
+        margin-top: 15rem;
+    }
+    .input-group{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .input-group label{
+        font-size: 26px;
+    }
+    .input-group input{
+        width: 46.938rem;
+        height: 4.438rem;
+        font-size: 24px;
+    }
+    .input-text p{
+        font-size: 26px;
+    }
+    .input-text textarea{
+        width: 90%;
+        height: 20rem;
+        padding: 1rem;
+        font-size: 20px;
+    }
+    .center-btn{
+        margin-top: 2rem;
+    }
+    .btn-contact{
+        width: 15.313rem;
+        height: 5.813rem;
+        font-size: 24px;
+    }
+
+}
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    .input-group{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .input-group label{
+        font-size: 26px;
+    }
+    .input-group input{
+        width: 33.938rem !important;
+        height: 4.438rem;
+        font-size: 23px;
+    }
+    .input-text p{
+        font-size: 24px;
+    }
+    .input-text textarea{
+        width: 90%;
+        height: 20rem;
+        padding: 1rem;
+        font-size: 18px;
+    }
+    .center-btn{
+        margin-top: 2rem;
+    }
+    .btn-contact{
+        width: 13.313rem;
+        height: 5.813rem;
+        font-size: 20px;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .container{
+        margin: 0;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .nav-item{
+        display: none;
+    }
+    .hero-left h3{
+        font-size: 42px;
+    }
+    .hero-right .desc p{
+        font-size: 20px;
+    }
+    .btn-hero{
+        width: 10rem;
+        height: 3rem;
+    }
+    table{
+        width:90%;
+    }
+    td, th {
+        padding: 0.5rem;
+    }
+    th{
+        font-size: 20px;
+    }
+    td{
+        font-size: 18px;
+    }
+    .input-group{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .input-group label{
+        font-size: 24px ;
+    }
+    .input-group input{
+        width: 28.938rem !important;
+        height: 4.438rem;
+        font-size: 20px;
+    }
+    .input-text p{
+        font-size: 22px;
+    }
+    .input-text textarea{
+        width: 90%;
+        height: 20rem;
+        padding: 1rem;
+        font-size: 16px;
+    }
+    .center-btn{
+        margin-top: 2rem;
+    }
+    .btn-contact{
+        width: 10.313rem;
+        height: 4.813rem;
+        font-size: 18px;
+    }
+ }
+ @media (max-width: 633.98px) {
+    .hero-left h3{
+        font-size: 40px;
+    }
+    .hero{
+        flex-wrap: wrap;
+    }
+    .hero-right .desc p{
+        margin-top: 2rem
+    }
+    .video-ft{
+        margin-top: -18rem;
+    }
+    .video-ft iframe{
+        width: 44.513rem;
+        height: 30.25rem;
+    }
+    .status-section ul {
+        gap: 4rem;
+    }
+    .status-section ul li{
+        font-size: 34px;
+    }
+    .rektor h5{
+        margin-bottom: -15rem;
+    }
+    .rektor-card{
+        margin: 0;
+        width: 20.125rem;
+        height: 19.813rem;
+    }
+    .rektor-group{
+        height: 100%;
+        background-color: var(--white-background);
+    }
+    .rektor-card img{
+        width: 13.285rem;
+        height: 15.653rem;
+    }
+    .rektor-desc{
+        margin: 0;
+        margin-top: -40rem;
+        width: 21.938rem;
+        height: 25rem;
+        text-align: center;
+    }
+    .rektor-desc h6{
+        margin: 0;
+        width: 20.938rem;
+        height: 2.029rem;
+        font-size: 28px;
+    }
+    .rektor-desc p {
+        margin: 0;
+        margin-top: 4rem;
+        width: 19.5rem;
+        height: 100%;
+        font-size: 26px;
+    }
+    .contact{
+        margin-top: -15rem;
+    }
+    .input-group{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .input-group label{
+        font-size: 22px ;
+    }
+    .input-group input{
+        width: 22.938rem !important;
+        height: 3.438rem;
+        font-size: 19px;
+    }
+    .input-text p{
+        font-size: 22px;
+    }
+    .input-text textarea{
+        width: 90%;
+        height: 20rem;
+        padding: 1rem;
+        font-size: 16px;
+    }
+    .center-btn{
+        margin-top: 2rem;
+    }
+    .btn-contact{
+        width: 10.313rem;
+        height: 3.813rem;
+        font-size: 17px;
+    }
+ }
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 475.98px) {
+    .container{
+        margin: 0;
+    }
+    
+    .nav-item{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+    }
+    .hero{
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+    .hero-left h3{
+        font-size: 40px;
+        line-height: 3rem;
+    }
+    .hero-right .desc p{
+        margin-top: 2rem
+    }
+    .btn-hero{
+        width: 7.75rem;
+        height: 2.75rem;
+        
+        font-size: 18px;
+    }
+    .video-ft{
+        margin-top: -18rem;
+    }
+    .video-ft iframe{
+        width: 24.513rem;
+        height: 20.25rem;
+    }
+    .status-section ul {
+        gap: 3rem;
+    }
+    .status-section ul li{
+        font-size: 32px;
+    }
+    .card p{
+        font-size: 26px;
+    }
+    table{
+        width:80%;
+    }
+    td, th {
+        padding: 0.3rem;
+    }
+    th{
+        font-size: 15px;
+    }
+    td{
+        font-size: 14px;
+    }
+
+    .rektor h5{
+        margin-bottom: -5rem;
+    }
+    .rektor-card{
+        margin: 0;
+        width: 16.125rem;
+        height: 19.813rem;
+    }
+    .rektor-group{
+        height: 100%;
+        background-color: var(--white-background);
+    }
+    .rektor-card img{
+        width: 13.285rem;
+        height: 15.653rem;
+    }
+    .rektor-desc{
+        margin: 0 auto;
+        margin-top: -11rem;
+        width: 15.938rem;
+        height: 18.75rem;
+        text-align: center;
+    }
+    .rektor-desc h6{
+        margin: 0;
+        width: 14.938rem;
+        height: 2.029rem;
+        font-size: 24px;
+    }
+    .rektor-desc p {
+        margin: 0;
+        margin-top: 7rem;    
+        width: 14.5rem;
+        height: 100%;
+        font-size: 22px;
+    }
+
+    .contact {
+        margin-top:10.625rem ;
+    }
+
+
+    .input-group{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .input-group label{
+        font-size: 18px;
+    }
+    .input-group input{
+        width: 16.938rem !important;
+        height: 2.438rem !important;
+        font-size: 16px !important;
+    }
+    .input-text p{
+        font-size: 18px;
+    }
+    .input-text textarea{
+        width: 90%;
+        height: 20rem;
+        padding: 1rem;
+        font-size: 16px;
+    }
+    .center-btn{
+        margin-top: 2rem;
+    }
+    .btn-contact{
+        width: 10.313rem;
+        height: 3.813rem;
+        font-size: 15px;
+    }
+
+    footer{
+        margin-top: 3rem;
+        padding: 1rem;
+        font-size: 16px;
+    }
+ }
+ @media (max-width: 405.98px){
+     .rektor-card{
+         margin-top: 3rem;
+     }
+    .rektor h5 {
+        margin-bottom: 0;
+    }
+    .rektor-desc{
+        margin-top: 3rem;
+
+    }
+    .contact{
+        margin-top: 20rem;
+    }
+ }
+
